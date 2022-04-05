@@ -49,10 +49,10 @@ include(${_project_options_SOURCE_DIR}/Index.cmake)
 
 # Set the project name and language
 project(
-  myproject
+  gamejam_round
   VERSION 0.0.1
   DESCRIPTION ""
-  HOMEPAGE_URL "%%myurl%%"
+  HOMEPAGE_URL "https://github.com/hegjoz/gamejam_round"
   LANGUAGES CXX C)
 
 set(GIT_SHA
