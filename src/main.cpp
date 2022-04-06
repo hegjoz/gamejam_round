@@ -302,6 +302,7 @@ void game_iteration_canvas()
   refresh_ui.join();
 }
 
+// Just edited so use turn_based game
 int main(int argc, const char **argv)
 {
   try {
@@ -309,8 +310,7 @@ int main(int argc, const char **argv)
       R"(intro
 
     Usage:
-          intro turn_based
-          intro loop_based
+          intro
           intro (-h | --help)
           intro --version
  Options:
@@ -326,11 +326,11 @@ int main(int argc, const char **argv)
         gamejam_round::cmake::project_version));// version string, acquired
                                             // from config.hpp via CMake
 
-    if (args["turn_based"].asBool()) {
+    //if (args["turn_based"].asBool()) {
       consequence_game();
-    } else {
-      game_iteration_canvas();
-    }
+    //} else {
+    //  game_iteration_canvas();
+    //}
 
     //    consequence_game();
   } catch (const std::exception &e) {
